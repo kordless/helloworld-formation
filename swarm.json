@@ -1,0 +1,18 @@
+{
+  "app_name": "helloworld-formation",
+  "services": [
+    {
+      "service_name": "webserver",
+      "components": [
+        {
+          "component_name": "python",
+          "image": "registry.giantswarm.io/$org/helloworld-formation",
+          "ports": [8000],
+          "domains": {
+            "$domain": 8000
+          }
+        }
+      ]
+    }
+  ]
+}
